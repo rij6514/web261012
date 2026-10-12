@@ -19,6 +19,7 @@ h1, footer {
     background: #fff;
     position: relative;
     transition: transform 0.3s, box-shadow 0.3s;
+    margin-bottom: 30px;
 }
 
 .card:hover {
@@ -46,4 +47,14 @@ h1, footer {
     padding: 4px 10px;
     border-radius: 999px;
     font-weight: bold;
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.15);
+    }
 }
